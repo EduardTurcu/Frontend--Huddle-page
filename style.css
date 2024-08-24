@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*face ca marinea si paddingul sa fie incluse in dimensiunea elementului */
+  background-color: white;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /*aranjeaza copii pe coloana*/
+  align-items: center; /*aranjeaza copii pe axa vertical la centru*/
+  /*justify-content: center;*/ /*aranjeaza copii pe axa orizontal la centru*/
+  background-color: #f9f9f9;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header__logo {
+  width: 150px;
+}
+
+.header__btn-try-it-free {
+  border-radius: 30px;
+  background: none;
+  font-size: 14px;
+  border: 2px solid rgb(254, 110, 225);
+  color: rgb(254, 110, 225);
+  padding: 10px 20px;
+}
+
+.header__btn-try-it-free:hover {
+  background-color: pink;
+  color: white;
+}
+
+.section-unu {
+  margin: 50px 0;
+}
+
+.main-content {
+  text-align: center;
+  /* margin-top: 50px; */
+}
+
+.main-content__title {
+  margin-bottom: 20px;
+}
+
+.main-content__subtitle {
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.main-content__btn-start {
+  border-radius: 30px;
+  background: rgb(254, 110, 225);
+  font-size: 14px;
+  border: 2px solid rgb(254, 110, 225);
+  color: white;
+  padding: 20px 70px;
+}
+
+.main-content__btn-start:hover {
+  background-color: rgb(
+    220,
+    100,
+    200
+  ); /*schimba nuanta de roz a elementului atunci cand utilizatorul trece peste el*/
+}
+
+.mockup {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.mockup__image {
+  max-width: 90%;
+  height: auto;
+}
+
+.cifre {
+  display: flex;
+  margin: 50px auto;
+  justify-content: space-around;
+  /* width: 100%; */
+}
+
+.cifre__item {
+  display: flex;
+  flex-direction: column;
+  /*cele 2 linii de deasupra aranjeaza elementele unul sub altul incepand de la stanga*/
+  /*ASTE POATE NU TREBUIE*/
+  text-align: center;
+}
+
+.cifre__icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.cifre__number {
+  font-size: 100px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cifre__description {
+  color: rgb(190, 190, 190);
+  font-size: 25px;
+}
+
+.cifre-dreapta {
+  display: flex;
+  margin: 50px auto;
+  justify-content: space-around;
+  /* width: 100%; */
+}
+
+.cifre__item-dreapte {
+  display: flex;
+  flex-direction: column;
+  /*cele 2 linii de deasupra aranjeaza elementele unul sub altul incepand de la stanga*/
+  /*ASTE POATE NU TREBUIE*/
+  text-align: center;
+}
+
+.message__icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.cifre__number-message {
+  font-size: 100px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cifre__description-message {
+  color: rgb(190, 190, 190);
+  font-size: 25px;
+}
+
+.panel1 {
+  margin: 0;
+  position: relative; /*Setează poziția relativă pentru a putea poziționa elementele în interiorul său.*/
+  padding: 0;
+  width: 100%;
+}
+
+.panel1__structura {
+  display: flex;
+  flex-direction: column; /*Aranjează copiii pe coloană, astfel încât să fie unul sub altul.*/
+  align-items: center;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.panel1__imagine {
+  width: 100%;
+  display: block; /*Imaginea este afisata ca un bloc*/
+}
+
+.panel1__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  width: 100%;
+  background-color: #f8fbff;
+}
+
+.panel1__content-text {
+  flex: 1;
+  padding-right: 210px;
+  background-color: #f8fbff;
+  padding-left: 70px;
+  text-align: left;
+}
+
+.panel1__content-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  background-color: #f8fbff;
+}
+
+.panel1__content-text p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+  background-color: #f8fbff;
+}
+
+.panel1__content-imagine {
+  flex: 1;
+  max-width: 45%;
+  height: auto;
+  padding-right: 100px;
+  background-color: #f8fbff;
+}
+
+.panel2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.panel2__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  margin-bottom: 80px;
+}
+
+.panel2__content-imagine {
+  flex: 1;
+  max-width: 45%;
+  height: auto;
+  padding-left: 80px;
+}
+
+.panel2__content-text {
+  text-align: left;
+  padding-left: 155px;
+  padding-right: 90px;
+}
+
+.panel2__content-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.panel2__content-text p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.ready-to-build {
+  font-size: 2em;
+}
+
+.ready-to-build__button {
+  border-radius: 40px;
+  padding: 20px 120px;
+  background: rgb(254, 110, 225);
+  color: white;
+  border: 2px solid rgb(254, 110, 225);
+  margin-top: 35px;
+  font-size: 15px;
+  margin-bottom: 150px;
+}
+
+.ready-to-build__button:hover {
+  background-color: rgb(220, 100, 200);
+}
+
+.footer-panel {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.footer-panel__imagine {
+  width: 100%;
+}
+
+.footer-panel__structura {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.footer-panel__continut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px;
+  background-color: rgb(4, 36, 44);
+}
+
+.logo-svg {
+  color: white;
+  background-color: rgb(4, 36, 44);
+  margin-bottom: 30px;
+}
+
+.logo-huddle {
+  background-color: rgb(4, 36, 44);
+}
+
+.footer-panel__left {
+  background-color: rgb(4, 36, 44);
+  padding-right: 250px;
+  padding-left: 70px;
+}
+
+.footer-panel__left p {
+  color: white;
+  background-color: rgb(4, 36, 44);
+  line-height: 1.5;
+  padding-right: 120px;
+}
+
+.nr-tel {
+  background-color: rgb(4, 36, 44);
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.mail-adress {
+  background-color: rgb(4, 36, 44);
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.phon-alb {
+  background-color: rgb(4, 36, 44);
+  margin-right: 20px;
+}
+
+.mail-alb {
+  background-color: rgb(4, 36, 44);
+  margin-right: 20px;
+}
+
+.footer-panel__right {
+  padding-right: 50px;
+  background-color: rgb(4, 36, 44);
+}
+
+.footer-panel__right h2 {
+  margin-bottom: 30px;
+  background-color: rgb(4, 36, 44);
+  color: white;
+}
+
+.footer-panel__right p {
+  background-color: rgb(4, 36, 44);
+  color: white;
+  line-height: 1.5;
+  padding-right: 180px;
+}
+
+.chenar-text {
+  width: 350px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.footer-panel__button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(254, 110, 225);
+  border-radius: 5px;
+  color: white;
+  margin-left: 35px;
+  font-weight: bold;
+}
